@@ -21,13 +21,48 @@
         </div>
       </section>
 
-      <section id="signup-container">
+      <section id="auth-container">
+        <h3>Student Login / Register</h3>
+        <div id="auth-forms">
+          <form id="login-form">
+            <div class="form-group">
+              <label for="login-email">Email:</label>
+              <input type="email" id="login-email" required placeholder="email@mergington.edu" />
+            </div>
+            <div class="form-group">
+              <label for="login-password">Password:</label>
+              <input type="password" id="login-password" required placeholder="Password" />
+            </div>
+            <button type="submit">Login</button>
+          </form>
+
+          <form id="register-form">
+            <div class="form-group">
+              <label for="register-name">Name:</label>
+              <input type="text" id="register-name" required placeholder="Student Name" />
+            </div>
+            <div class="form-group">
+              <label for="register-grade">Grade:</label>
+              <input type="text" id="register-grade" required placeholder="Grade Level" />
+            </div>
+            <div class="form-group">
+              <label for="register-email">Email:</label>
+              <input type="email" id="register-email" required placeholder="email@mergington.edu" />
+            </div>
+            <div class="form-group">
+              <label for="register-password">Password:</label>
+              <input type="password" id="register-password" required placeholder="Password" />
+            </div>
+            <button type="submit">Register</button>
+          </form>
+        </div>
+        <button id="logout-button" class="hidden">Logout</button>
+        <div id="auth-message" class="hidden"></div>
+      </section>
+
+      <section id="signup-container" class="hidden">
         <h3>Sign Up for an Activity</h3>
         <form id="signup-form">
-          <div class="form-group">
-            <label for="email">Student Email:</label>
-            <input type="email" id="email" required placeholder="your-email@mergington.edu" />
-          </div>
           <div class="form-group">
             <label for="activity">Select Activity:</label>
             <select id="activity" required>
